@@ -1,0 +1,50 @@
+.centrage-portfolio{
+display: flex ;
+flex-wrap: wrap ;
+
+}
+
+.container {
+position: relative;
+width: 20%;
+margin: 15px;
+}
+
+.image {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.portfolio-p{
+padding-left: 15px;
+}
+
+.icone{
+position: absolute;
+transform: translateY(-50%);
+border-radius: 9999px;
+background-color: blue;
+border: 2px solid white ;
+right: 10px;
+padding: 14px 12px ;
+top: 0;
+}
+
+.overlay {
+position: absolute;
+bottom: 0;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.5); 
+color: white;
+width: 100%;
+transition: .5s ease;
+opacity:0;
+font-size: 20px;
+height: 33%;
+text-align: left;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
