@@ -1,24 +1,19 @@
-body{
-margin: 0;
-}
 
 .centrage-portfolio{
 margin : auto ;
 display: flex ;
 flex-wrap: wrap ;
-background-color: blue;
-width: 100%;
-margin: 0;
+background-color: red;
+align-items: flex-start;
 }
 
-.container {
+.container-portfolio {
 position: relative;
 width: 22%;
 margin: 15px;
 }
 
-.image {
-display: block;
+.image-porfolio {
 width: 100%;
 height: auto;
 }
@@ -27,7 +22,7 @@ height: auto;
 padding-left: 15px;
 }
 
-.icone{
+.icone-porfolio{
 position: absolute;
 transform: translateY(-50%);
 border-radius: 9999px;
@@ -40,7 +35,7 @@ top: 0;
 
 .overlay {
 position: absolute;
-bottom: 0;
+bottom: 4px;
 background: rgb(0, 0, 0);
 background: rgba(0, 0, 0, 0.5); 
 color: white;
@@ -52,6 +47,6 @@ height: 33%;
 text-align: left;
 }
 
-.container:hover .overlay {
+.container-portfolio:hover .overlay {
   opacity: 1;
 }
