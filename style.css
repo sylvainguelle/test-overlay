@@ -1,16 +1,22 @@
+body {
+margin: 0;
+padding: 0;
+}
 
-.centrage-portfolio{
+.portfolioimg{
 margin : auto ;
 display: flex ;
 flex-wrap: wrap ;
 background-color: red;
 align-items: flex-start;
+width: 100% ;
 }
 
 .container-portfolio {
 position: relative;
-width: 22%;
-margin: 15px;
+width: calc(25% - 50px);
+margin: 25px ;
+overflow: hidden;
 }
 
 .image-porfolio {
@@ -19,7 +25,8 @@ height: auto;
 }
 
 .portfolio-p{
-padding-left: 15px;
+margin : 0;
+padding: 0 ;
 }
 
 .icone-porfolio{
@@ -49,4 +56,20 @@ text-align: left;
 
 .container-portfolio:hover .overlay {
   opacity: 1;
+}
+
+@media all and (min-width: 960px) and (max-width: 1199px) {
+.container-portfolio {
+position: relative;
+width: calc(50% - 50px);
+margin: 25px ;
+}
+}
+
+@media all and (max-width: 959px) {
+.container-portfolio {
+position: relative;
+width: calc(100% - 50px);
+margin: 25px ;
+}
 }
